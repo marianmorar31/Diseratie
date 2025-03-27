@@ -7,10 +7,10 @@ const app = express();
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("Product Service is running booyah!");
+  res.send("Product Service is up and running booyah!");
 });
 
-console.log("Hallo");
+console.log("Hallo 222");
 
-const PORT = process.env.PORT || 5002;
+const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => console.log(`Product Service running on port ${PORT}`));
