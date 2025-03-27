@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  product-service:
+    build: ./Backend/product-service
+    ports:
+      - "5001:5001"
+    environment:
+      - PORT=5001
+    restart: always # Ensures it restarts if it crashes
